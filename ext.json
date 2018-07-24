@@ -1,0 +1,127 @@
+{
+        "extEnable": true,
+        "extAppid": "wx662a4730d0f03a5b",
+        "directCommit": false,
+        "ext": {
+                "name": "门店终端",
+                "appid": "wx662a4730d0f03a5b",
+                "createUserId": 1000016
+        },
+        "extPages": {
+                "pages/site/index/index": {
+                        "navigationBarTitleText": ""
+                },
+                "pages/site/discDetail/discDetail": {
+                        "navigationBarTitleText": "发现详情"
+                },
+                "pages/site/storeUser/storeUser": {
+                        "navigationBarTitleText": "个人中心"
+                },
+                "pages/site/discover/discover": {
+                        "navigationBarTitleText": "发现"
+                },
+                "pages/site/preferential/preferential": {
+                        "navigationBarTitleText": "优惠买单"
+                },
+                "pages/site/consulting/consulting": {
+                        "navigationBarTitleText": "提交预约"
+                },
+                "pages/site/member/member": {
+                        "navigationBarTitleText": "我的会员"
+                },
+                "pages/site/myconsult/myconsult": {
+                        "navigationBarTitleText": "我的预约"
+                },
+                "pages/site/consultDetail/consultDetail": {
+                        "navigationBarTitleText": "预约详情"
+                },
+                "pages/site/integral/integral": {
+                        "navigationBarTitleText": "我的积分"
+                },
+                "pages/site/myCollect/myCollect": {
+                        "navigationBarTitleText": "我的收藏"
+                },
+                "pages/site/myPreferential/myPreferential": {
+                        "navigationBarTitleText": "我的优惠买单"
+                },
+                "pages/site/preferentList/preferentList": {
+                        "navigationBarTitleText": "优惠买单详情"
+                },
+                "pages/site/memberDetail/memberDetail": {
+                        "navigationBarTitleText": "会员卡详情"
+                },
+                "pages/site/address/address": {
+                        "navigationBarTitleText": "收货地址"
+                },
+                "pages/site/myCoupon/myCoupon": {
+                        "navigationBarTitleText": "我的优惠券"
+                },
+                "pages/site/personalinfo/personalinfo": {
+                        "navigationBarTitleText": "个人信息"
+                },
+                "pages/site/comment/comment": {
+                        "navigationBarTitleText": "填写评论"
+                }
+            
+        },
+        "pages": [
+                "pages/site/index/index",
+                "common/common",
+                "pages/site/discDetail/discDetail",
+                "pages/site/storeUser/storeUser",
+                "pages/site/storeIndex/storeIndex",
+                "pages/site/discover/discover",
+                "pages/site/preferential/preferential",
+                "pages/site/consulting/consulting",
+                "pages/site/member/member",
+                "pages/site/myconsult/myconsult",
+                "pages/site/consultDetail/consultDetail",
+                "pages/site/integral/integral",
+                "pages/site/myCollect/myCollect",
+                "pages/site/personalinfo/personalinfo",
+                "pages/site/myCoupon/myCoupon",
+                "pages/site/myPreferential/myPreferential",
+                "pages/site/preferentList/preferentList",
+                "pages/site/memberDetail/memberDetail",
+                "pages/site/address/address",
+                "pages/site/comment/comment"
+        ],
+        "window": {
+                "backgroundTextStyle": "black",
+                "navigationBarBackgroundColor": "white",
+                "navigationBarTitleText": "",
+                "navigationBarTextStyle": "black"
+        },
+        "tabBar": {
+                "color": "#666",
+                "selectedColor": "#333",
+                "backgroundColor": "#fff",
+                "borderStyle": "black",
+                "list": [
+                        {
+                                "pagePath": "pages/site/index/index",
+                                "text": "首页",
+                                "iconPath": "images/tabbar/home.png",
+                                "selectedIconPath": "images/tabbar/home-in.png"
+                        },
+                        {
+                                "pagePath": "pages/site/discover/discover",
+                                "text": "发现",
+                                "iconPath": "images/tabbar/messages.png",
+                                "selectedIconPath": "images/tabbar/message-in.png"
+                        },
+                        {
+                                "pagePath": "pages/site/storeUser/storeUser",
+                                "text": "我的",
+                                "iconPath": "images/tabbar/personal.png",
+                                "selectedIconPath": "images/tabbar/personal-in.png"
+                        }
+                ]
+        },
+        "networkTimeout": {
+                "request": 5000,
+                "connectSocket": 5000,
+                "uploadFile": 5000,
+                "downloadFile": 5000
+        }
+}

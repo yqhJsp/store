@@ -1,0 +1,75 @@
+<!--pages/site/personalinfo/personalinfo.wxml-->
+<view class='userTop' style='background-color:#{{maninfo.tone}}'></view>
+<view class='session'>
+  <view class='top'>
+    <view class='indexLogo'>
+      <image src='{{member.userInfo.avatarUrl}}' class='useIcon' wx:if="{{member.userInfo.avatarUrl!=''}}"></image>
+      <image src='/images/indexImg/hear.png' class='useIcon' wx:if="{{member.userInfo.avatarUrl==''}}"></image>
+    </view>
+    <view class='userNmae' wx:if="{{member.userInfo.nickName!=''}}">{{member.userInfo.nickName}}</view>
+    <view class='userNmae' wx:if="{{member.userInfo.nickName==''}}">客观</view>
+  </view>
+
+  <view class='signTian'>
+    <view class='signTem border'>
+      <view class='nameText'>
+        姓名：
+      </view>
+      <view class='temRignt'>
+       <input class='integInput' bindinput='nameInput' value='{{name}}' placeholder="请填写姓名" placeholder-style="color:#999"></input>
+      </view>
+    </view>
+    <view class='signTem border'>
+      <view class='nameText'>
+        性别：
+      </view>
+      <view class='userRight'>
+         <view class='parcelItem'>
+        <view class="checkbox_item {{sex==1?'active':''}}" data-id='1' catchtap='checked'>
+          <checkbox value="" checked="{{sex==1?true:false}}" class='carbox' />
+        </view>
+        <label>男</label>
+      </view>
+       <view class='parcelItem'>
+        <view class="checkbox_item {{sex==2?'active':''}}" data-id='2' catchtap='checked'>
+          <checkbox value="" checked="{{sex==2?true:false}}"class='carbox' />
+        </view>
+        <label>女</label>
+      </view>
+      </view>
+    </view>
+
+     <view class='signTem border'>
+      <view class='nameText'>
+        手机号：
+      </view>
+      <view class='temRignt'>
+        <input class='integInput' bindinput='phoneInput' value='{{mobile}}' placeholder="请填写手机号码" placeholder-style="color:#999"></input>
+      </view>
+    </view>
+
+     <view class='signTem border'>
+      <view class='mdate'>
+        出生日期：
+      </view>
+      <view class='temRignt'>
+       <picker mode="date" value="{{date}}" bindchange="bindDateChange" class='datePick'>
+            <view class="picker">
+               {{date[0]}}<label wx:if="{{date[0]!=''}}">-</label>{{date[1]}} 
+            </view>
+            </picker>
+      </view>
+    </view>
+
+    <view class='signTem'>
+      <view class='nameText'>
+        住址：
+      </view>
+      <view class='temRignt'>
+        <input class='integInput' bindinput='addressInput' value='{{address}}'></input>
+      </view>
+    </view>
+  </view>
+  <!--end-->
+  <view class='mod_btn' bindtap='saveMember' style='margin-top:100rpx'>保存</view>
+</view>
